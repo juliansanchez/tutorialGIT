@@ -1,0 +1,550 @@
+/****************************************************************************************/
+/* Estilo Movil Autor: Julián Sánchez García                                         */
+/****************************************************************************************/
+/******************************* MATRIX ***************************************/
+	@-webkit-keyframes fondo{
+   from {top: -300%;}
+   to {top: 110%;}
+}
+
+#matrix{
+   margin: 1em auto;
+   width: 100%;
+   height: 30%;
+   overflow: hidden;
+   background: white;
+   color: #f3203d; 	
+   text-shadow: rgba(255, 255, 255, .8) 0px 0px 4px;
+   position: relative;   
+}
+
+#matrix div{
+   position: absolute;   
+   top: 0;
+   /* rotamos el texto*/ 
+   -webkit-transform-origin: 0%; 
+   -webkit-animation-name: fondo;         
+   -webkit-animation-iteration-count: infinite; 
+   -webkit-animation-direction: normal; 
+   -moz-transform-origin: 0%; 
+   -moz-animation-name: fondo;         
+   -moz-animation-iteration-count: infinite; 
+   -moz-animation-direction: normal; 
+      -ms-transform-origin: 0%; 
+   -ms-animation-name: fondo;         
+   -ms-animation-iteration-count: infinite; 
+   -ms-animation-direction: normal; 
+   -o-transform-origin: 0%; 
+   -o-animation-name: fondo;         
+   -o-animation-iteration-count: infinite; 
+   -o-animation-direction: normal; 
+}
+}
+
+.f1{
+   font-size: 1em;
+}
+.f2{
+   font-size: .8em;
+}
+.c1{
+   color:  #04071;
+}
+.d1{
+   -webkit-animation-duration: 4s;
+    -ms-animation-duration: 4s;
+     -moz-animation-duration: 4s;
+      -o-animation-duration: 4s;
+}
+.d2{
+   -webkit-animation-duration: 6s;
+   -ms-animation-duration: 6s;
+     -moz-animation-duration: 6s;
+      -o-animation-duration: 6s;
+}
+.d3{
+   -webkit-animation-duration: 7s;
+   -ms-animation-duration: 7s;
+     -moz-animation-duration: 7s;
+      -o-animation-duration: 7s;
+}
+.d4{
+   -webkit-animation-duration: 9s;
+   -ms-animation-duration: 9s;
+     -moz-animation-duration: 9s;
+      -o-animation-duration: 9s;
+}
+.de{   
+   -webkit-animation-delay: 3s;
+   -ms-animation-duration: 3s;
+     -moz-animation-duration: 3s;
+      -o-animation-duration: 3s;
+}
+
+
+/****************************************************************************************/
+/* Colores:  morado -> #3A0035;   azul: #c2f7f7;  azul2: #04071;  rosa: #f3203d; 	
+			 gris: #d3cae5;						                                    	*/
+/****************************************************************************************/
+/*border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 2px solid black;
+	*/
+div{
+	transition: 1s ease;
+
+}
+/** Reset CSS **/
+body,header,footer,h1,h2,h3,h4 {
+	margin:0;
+	padding:0;
+}
+
+
+/*********************************************************************************/
+/* MENÚ HAMBURGUESA                                                              */
+/*********************************************************************************/
+*{
+	box-sizing: border-box; /* solo para padding*/
+}
+nav>ul>li{
+	margin-left:10px;
+}
+#iconoMenu{
+	font-size: 2em;
+	font-weight: bold;
+	color:#F8F0F0;	
+	speak:none;
+}
+div{ 
+	margin-left: 10px;
+	margin-right: 10px;
+}
+nav>ul{
+	list-style: none;
+	padding: 0 0 0 .2em;
+	margin: 0;
+	max-height: 1.75em; /* dar altura sufuciente ara que quepan los items que vamos a desplegar*/
+	overflow: hidden;
+}
+nav>ul>li{
+	line-height: 1.75em;
+}
+nav>ul>li>a{
+	color:#fff;
+	display: block;
+	width: 100%;
+	line-height: 1.25em;
+}
+nav>ul>li>a:hover{	 
+	color:#F10C0C;
+}
+nav{
+	background-color:#077889;
+}
+	#menu-trigger{
+	display: none;
+}
+#menu-trigger:checked+ul{
+	max-height: 20em;
+}
+label[for="menu-trigger"]{
+	display: block;
+	cursor: pointer;
+}
+#menu-trigger:checked label[for="menu-trigger"]{
+	transform:rotateY(90deg);
+}
+/****************************************************************************************/
+/* Etiquetas generales                                                                  */
+/****************************************************************************************/
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  
+}
+aside,
+figure,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+footer{
+	font-family: 'Ubuntu', Arial, Sans-serif;
+	background-color: white;
+	border-top: 5px solid #077889;
+	text-align: center;
+	padding: 0;
+	font-size: .8em;
+	margin: 0;
+	position: relative;
+	width: 100%;
+	margin-top: 20px;
+}
+/*********************************************************************************/
+/* Links                                                                         */
+/*********************************************************************************/	
+	
+	a:link {text-decoration:none; color: #142b3b;}  /* enlaces no visitados */
+	a:visited {} /* enlaces visitados */
+	a:hover {color:#f3203d;} /* el usuario pasa el cursor por encima */
+	a:active {} /* enlaces activos */
+	
+/*********************************************************************************/
+/* Estilos especificos                                                           */
+/*********************************************************************************/
+#bloqueCita{
+	text-align: right;
+	position: relative;
+	margin-top: 30px;
+}
+
+.cita{
+	font-style: italic;
+	font-size: .7em;
+	
+}
+.cita2{
+	font-size:.5em;
+	font-weight:bold;
+	padding-right: 2px;
+	margin-right: 8px;
+	color: #000000;
+	text-align: right;
+}
+#titulo{
+	font-size: 1.5em;
+	color: #f3203d;
+}
+
+.presentacion{
+	color: #000000;
+	padding:0px;
+	font-size: 1em;
+	color: black;
+	margin-top: 5px;
+	font-weight:bold;
+}
+
+#idioma{
+	position: absolute;
+	font-family: Verdana;
+	padding: 2px;
+	font-size: 1em;
+	font-weight: bold;
+	text-align: center;
+}
+#contacto{
+	position: absolute;
+	font-weight: bold;
+	font-family: Verdana;
+	padding: 2px;
+	font-size: 1em;
+	text-align: center;
+}
+#home{
+	font-weight: bold;
+	position: absolute;
+	font-family: Verdana;
+	padding: 2px;
+	font-size: 1em;
+	text-align: right;
+}
+#eng{
+	color: #f3203d;
+	font-size: 1em;
+}
+#esp{
+	color: white;
+	font-size: 1em;
+}
+#esp2{
+	color:white;
+	font-size: 1em;
+}
+#esp3{
+	color:white;
+	font-size: 1em;
+}
+
+.clientes{
+	font-size: .8em;
+	color: #131a4a;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+#foot{
+	color: #04071c;
+	font-size: .7em;
+	margin-top: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	}
+#autor{
+	padding:10px;
+}
+
+.enlace{
+	font-style: italic;
+}
+.texto1{
+	font-size: .9em;
+	color: #f3203d;
+
+}
+.texto2{
+	font-weight: bold;
+	color:black;
+	font-size: .8em;
+	margin-top: 5%;
+	margin-bottom: 0;
+	padding: 0;
+}
+.texto3{
+	font-size: 1em;
+	color: black;
+	font-weight: bold;
+}
+.texto4{
+	font-size: .8em;
+	color:  #f3203d;
+}
+.texto5{
+	font-size: 1em;
+	color: black;
+	margin-bottom: 10%;
+	margin-top: 5%;
+}
+
+.secciones{
+	color:#f3203d;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+
+/**********************************************************************/
+/* ESTILO FULLSCREEN                                                 */
+/********************************************************************/	
+@media screen and (min-width: 480px) {
+	/****************************************************************************************/
+	/* Estilo Pantalla Autor: Julián Sánchez García                                         */
+	/****************************************************************************************/
+	@-webkit-keyframes fondo{
+   from {top: -400%;}
+   to {top: 95%;}
+}
+
+#matrix{
+ 
+   width: 100%;
+   height: 40%;
+   overflow: hidden;
+   background: white;
+   color: #f3203d; 	
+   text-shadow: rgba(255, 255, 255, .8) 0px 0px 4px;
+   position: relative;   
+}
+
+#matrix div{
+   position: absolute;   
+   top: 0;
+   /* rotamos el texto*/ 
+   -webkit-transform-origin: 0%; 
+   -webkit-animation-name: fondo;         
+   -webkit-animation-iteration-count: infinite; 
+   -webkit-animation-direction: normal; 
+}
+	/****************************************************************************************/
+	/* Colores:  morado -> #3A0035;   azul: #c2f7f7; azul2: #04071;  rosa: #f3203d; 	
+				 gris: #d3cae5;			                                            		*/
+	/****************************************************************************************/
+
+	/** Reset CSS **/
+	body,header,footer,h1,h2,h3,h4 {
+		margin:0;
+		padding:0;
+	}
+	div{ 
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+/*********************************************************************************/
+		/* MENU HAMBURGUESA FULLSCREEN                                                               */
+		/*********************************************************************************/		
+			*{
+				box-sizing: border-box; /* solo para padding*/
+			}
+			nav>ul>li{
+				margin-left: 20px;
+				display: inline;
+			}
+			#iconoMenu{
+				display: none;
+				margin-bottom: 20px;
+				margin-top: -10px;
+			}
+			
+			nav>ul>li>a{
+				display: inline;
+				width: 100%;
+			}
+			#menu-trigger{
+				display: none;
+			}
+	/****************************************************************************************/
+	/* Etiquetas generales                                                                  */
+	/****************************************************************************************/
+
+	body {
+	  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+
+	html,body{
+		margin:0px;
+		height:100%;
+	}
+	nav{
+		margin-bottom: 70px;
+		margin-left: 150px;
+		margin-right: 150px;
+	}
+
+
+	article,
+	aside,
+	figure,
+	footer,
+	header,
+	nav,
+	section {
+	  display: block;
+	}
+
+	/*********************************************************************************/
+	/* Links                                                                         */
+	/*********************************************************************************/	
+		
+		a:link {text-decoration:none; color: #142b3b;}  /* enlaces no visitados */
+		a:visited {} /* enlaces visitados */
+		a:hover {color:#f3203d;} /* el usuario pasa el cursor por encima */
+		a:active {} /* enlaces activos */
+		
+	/*********************************************************************************/
+	/* Estilos especificos                                                           */
+	/*********************************************************************************/
+
+	#bloqueCita{
+		text-align: right;
+		position: relative;
+	}
+
+	.cita{
+		font-style: italic;
+		font-size: 1em;
+		line-height: 10px;
+	}
+	.cita2{
+		font-size:.9em;
+		font-weight:bold;
+		padding-right: 5px;
+		line-height: 4px;
+		color: #000000;
+		text-align: right;
+	}
+	#titulo{
+		font-size: 1.75em;
+		color: #f3203d;
+	}
+
+	.presentacion{
+		color: #000000;
+		padding:0px;
+		font-size: 1.75em;
+		color: black;
+		margin-top: 5px;
+		font-weight:bold;
+	}
+
+	#idioma{
+		position: absolute;
+		font-family: Verdana;
+		padding: 2px;
+		font-size: 1em;
+		font-weight: bold;
+		text-align: center;
+	}
+	#contacto{
+		position: absolute;
+		font-family: Verdana;
+		padding: 2px;
+		font-size: 1em;
+		text-align: center;
+	}
+	#home{
+		position: absolute;
+		font-family: Verdana;
+		padding: 2px;
+		font-size: 1em;
+		text-align: right;
+
+	}
+	#eng{
+		color: white;
+		font-size: 1em;
+	}
+	#esp{
+		color:white;
+		font-size: 1em;
+	}
+	#esp2{
+		color:white;
+		font-size: 1em;
+	}
+	#esp3{
+		color:white;
+		font-size: 1em;
+	}
+
+	.secciones{
+		color:#f3203d;
+		font-size: 2.2em;
+		font-weight: bold;
+	}
+
+	.texto1{
+		font-weight: bold;
+		color: black;
+		font-size: 1em;
+	}
+	.texto2{
+		font-weight: bold;
+		font-size: 1em;
+	}
+	.texto3{
+		font-size: 2em;
+	}
+	
+	.texto4{
+		font-size: 1em;
+		color: black;
+	}
+	.texto5{
+		font-size: 1em;
+		color: black;
+		margin-left: 25%;
+	}
+
+	.clientes{
+		font-size: 1em;
+		font-weight: bold;
+		margin-bottom: 30px;
+	}
+
+}
+
