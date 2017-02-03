@@ -342,11 +342,11 @@ footer{
 
 #matrix{
  
-   width: 100%;
+   width: 80%;
    height: 10%;
    overflow: hidden;
    background: white;
-   color: #f3203d; 	
+   color: green; 	
    text-shadow: rgba(255, 255, 255, .8) 0px 0px 4px;
    position: relative;   
 }
