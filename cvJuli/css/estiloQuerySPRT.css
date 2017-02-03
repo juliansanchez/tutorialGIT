@@ -10,7 +10,7 @@
 #matrix{
    margin: 1em auto;
    width: 100%;
-   height: 30%;
+   height: 20%;
    overflow: hidden;
    background: white;
    color: #f3203d; 	
@@ -343,7 +343,7 @@ footer{
 #matrix{
  
    width: 100%;
-   height: 40%;
+   height: 10%;
    overflow: hidden;
    background: white;
    color: #f3203d; 	
@@ -352,7 +352,7 @@ footer{
 }
 
 #matrix div{
-   position: absolute;   
+   position: relative;   
    top: 0;
    /* rotamos el texto*/ 
    -webkit-transform-origin: 0%; 
