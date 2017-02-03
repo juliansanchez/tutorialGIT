@@ -345,8 +345,8 @@ footer{
    width: 80%;
    height: 10%;
    overflow: hidden;
-   background: white;
-   color: green; 	
+ 
+   color: blue; 	
    text-shadow: rgba(255, 255, 255, .8) 0px 0px 4px;
    position: relative;   
 }
